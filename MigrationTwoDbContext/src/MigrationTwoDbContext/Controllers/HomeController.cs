@@ -53,11 +53,12 @@ namespace MigrationTwoDbContext.Controllers
         }
 
         [HttpPost]
-        public string Buy(Order order)
+        public IActionResult Buy(Order order)
         {
             db.Orders.Add(order);
             db.SaveChanges();
-            return "Спасибо, " + order.User + ", за покупку!";
+            ViewBag.stringd = "Спасибо, " + order.User + ", за покупку!";
+            return View();
         }
 
         #endregion
