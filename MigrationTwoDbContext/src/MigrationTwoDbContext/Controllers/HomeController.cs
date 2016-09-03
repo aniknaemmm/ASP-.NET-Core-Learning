@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MigrationTwoDbContext.Data;
+using MigrationTwoDbContext.Models;
 
 namespace MigrationTwoDbContext.Controllers
 {
@@ -41,5 +42,24 @@ namespace MigrationTwoDbContext.Controllers
         {
             return View();
         }
+
+        #region  HTTP GET/POST
+
+        [HttpGet]
+        public IActionResult Buy(int id)
+        {
+            ViewBag.PhoneId = id;
+            return View();
+        }
+
+        [HttpPost]
+        public string Buy(Order order)
+        {
+            db.Orders.Add(order);
+            db.SaveChanges();
+            return "Спасибо, " + order.User + ", за покупку!";
+        }
+
+        #endregion
     }
 }
