@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FE3C4522-4F7F-4066-AF66-AA4FD93B96BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5830FA0-B98D-43A5-8C70-D5DFC3B80CD4}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MigrationTwoDbContext", "src\MigrationTwoDbContext\MigrationTwoDbContext.xproj", "{4443EC77-E488-4016-9A3B-1F1BA95E7B34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4443EC77-E488-4016-9A3B-1F1BA95E7B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4443EC77-E488-4016-9A3B-1F1BA95E7B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4443EC77-E488-4016-9A3B-1F1BA95E7B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4443EC77-E488-4016-9A3B-1F1BA95E7B34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4443EC77-E488-4016-9A3B-1F1BA95E7B34} = {FE3C4522-4F7F-4066-AF66-AA4FD93B96BA}
+	EndGlobalSection
+EndGlobal
