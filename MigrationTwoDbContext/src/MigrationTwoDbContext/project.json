@@ -1,5 +1,5 @@
 ﻿{
-  "userSecretsId": "aspnet-MigrationTwoDbContext-6c1a0727-6e63-4bf3-aff3-6ee289ec5017",
+  "userSecretsId": "aspnet-MigrationTwoDbContext-5e26e874-a9b3-42f8-aa86-ad533f204361",
 
   "dependencies": {
     "Microsoft.NETCore.App": {
@@ -16,6 +16,8 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
+    "Microsoft.AspNetCore.Session": "1.0.0",
+    "Microsoft.Extensions.Caching.Memory": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
     "Microsoft.AspNetCore.StaticFiles": "1.0.0",
@@ -43,8 +45,7 @@
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    },
-    "StructureMap": "4.4.0",
+    }
   },
 
   "tools": {
